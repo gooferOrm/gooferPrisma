@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gooferOrm/goofer/engine/protocol"
-	"github.com/gooferOrm/gooferuntime/types"
+	"github.com/gooferOrm/goofer/runtime/types"
 	"github.com/tacherasasi/goofer/logger"
 )
 

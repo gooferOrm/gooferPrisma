@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/goofer/runtime/types"
 	"github.com/gooferOrm/gooferngine/protocol"
-	"github.com/gooferOrm/gooferuntime/types"
 	"github.com/tacherasasi/goofer/logger"
 )
 

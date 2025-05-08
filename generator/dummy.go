@@ -6,5 +6,5 @@ package generator
 
 import (
 	_ "github.com/gooferOrm/goofer/generator/templates"
-	_ "github.com/gooferOrm/gooferenerator/templates/actions"
+	_ "github.com/gooferOrm/goofer/generator/templates/actions"
 )

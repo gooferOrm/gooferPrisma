@@ -2,7 +2,7 @@ package transform
 
 import (
 	"github.com/gooferOrm/goofer/generator/ast/dmmf"
-	"github.com/gooferOrm/gooferenerator/types"
+	"github.com/gooferOrm/goofer/generator/types"
 )
 
 type Model struct {

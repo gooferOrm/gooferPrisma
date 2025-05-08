@@ -10,8 +10,8 @@ import (
 
 	"github.com/gooferOrm/goofer/engine"
 	"github.com/gooferOrm/goofer/logger"
-	"github.com/gooferOrm/gooferuntime/builder"
-	"github.com/gooferOrm/gooferuntime/types/raw"
+	"github.com/gooferOrm/goofer/runtime/builder"
+	"github.com/gooferOrm/goofer/runtime/types/raw"
 )
 
 type Raw struct {

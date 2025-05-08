@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/gooferOrm/goofer/runtime/builder"
-	"github.com/gooferOrm/gooferuntime/transaction"
+	"github.com/gooferOrm/goofer/runtime/transaction"
 )
 
 func (r Raw) QueryRaw(query string, params ...interface{}) QueryExec {

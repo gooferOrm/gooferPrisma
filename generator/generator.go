@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/gooferOrm/goofer/generator/ast/dmmf"
-	"github.com/gooferOrm/gooferenerator/ast/transform"
-	"github.com/gooferOrm/gooferenerator/types"
+	"github.com/gooferOrm/goofer/generator/ast/transform"
+	"github.com/gooferOrm/goofer/generator/types"
 	"github.com/tacherasasi/goofer/logger"
 )
 

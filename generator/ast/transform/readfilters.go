@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/gooferOrm/goofer/generator/ast/dmmf"
-	"github.com/gooferOrm/gooferenerator/types"
+	"github.com/gooferOrm/goofer/generator/types"
 )
 
 const list = "List"
