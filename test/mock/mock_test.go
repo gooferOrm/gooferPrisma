@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steebchen/prisma-client-go/test/helpers/massert"
+	"github.com/tacherasasi/goofer/test/helpers/massert"
 )
 
 func TestTypedMockReturns(t *testing.T) {

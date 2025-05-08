@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/steebchen/prisma-client-go/generator/ast/transform"
+	"github.com/tacherasasi/goofer/generator/ast/transform"
 )
 
 // Transform builds the AST from the flat DMMF so it can be used properly in templates

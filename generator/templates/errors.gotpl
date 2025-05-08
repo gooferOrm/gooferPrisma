@@ -1,4 +1,4 @@
-{{- /*gotype:github.com/steebchen/prisma-client-go/generator.Root*/ -}}
+{{- /*gotype:github.com/gooferOrm/goofer/generator.Root*/ -}}
 
 var ErrNotFound = types.ErrNotFound
 var IsErrNotFound = types.IsErrNotFound

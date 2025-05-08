@@ -1,4 +1,4 @@
-{{- /*gotype:github.com/steebchen/prisma-client-go/generator.Root*/ -}}
+{{- /*gotype:github.com/gooferOrm/goofer/generator.Root*/ -}}
 
 {{ range $model := $.DMMF.Datamodel.Models }}
 	{{ range $t := $.DMMF.Types }}

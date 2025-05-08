@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/steebchen/prisma-client-go/generator/types"
+	"github.com/tacherasasi/goofer/generator/types"
 )
 
 func (r *AST) writeFilters() []Filter {

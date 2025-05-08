@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	"path"
 
-	"github.com/steebchen/prisma-client-go/binaries"
-	"github.com/steebchen/prisma-client-go/binaries/platform"
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/binaries"
+	"github.com/tacherasasi/goofer/binaries/platform"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 // Run the prisma CLI with given arguments

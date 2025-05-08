@@ -14,7 +14,7 @@ git clone git@github.com:steebchen/prisma-go-demo.git && cd prisma-go-demo
 Create the pre-defined SQLite database and generate the Go client:
 
 ```shell
-go run github.com/steebchen/prisma-client-go db push
+go run github.com/gooferOrm/goofer db push
 ```
 
 Finally, run the simple main program at `main.go`:
@@ -63,7 +63,7 @@ go mod init demo
 Install the Go module in your project:
 
 ```shell script
-go get github.com/steebchen/prisma-client-go
+go get github.com/gooferOrm/goofer
 ```
 
 ### Prepare your Prisma database schema
@@ -79,7 +79,7 @@ datasource db {
 }
 
 generator db {
-  provider = "go run github.com/steebchen/prisma-client-go"
+  provider = "go run github.com/gooferOrm/goofer"
 }
 
 model Post {
@@ -96,12 +96,12 @@ Next, run `db push` to synchronize your schema with your database. It will also 
 
 ```shell script
 # sync the database with your schema
-go run github.com/steebchen/prisma-client-go db push
+go run github.com/gooferOrm/goofer db push
 # The Prisma Client Go client is automatically generated in your project.
 # You can re-run this command any time to sync your schema with the database.
 ```
 
-If you just want to re-generate the client, run `go run github.com/steebchen/prisma-client-go generate`.
+If you just want to re-generate the client, run `go run github.com/gooferOrm/goofer generate`.
 
 To create a migration for your production database, use the Prisma migration
 tool [`migrate`](https://www.prisma.io/docs/concepts/components/prisma-migrate) to create and migrate your database.

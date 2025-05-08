@@ -1,7 +1,7 @@
 package lifecycle
 
 import (
-	"github.com/steebchen/prisma-client-go/engine"
+	"github.com/tacherasasi/goofer/engine"
 )
 
 type Lifecycle struct {

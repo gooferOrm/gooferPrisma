@@ -10,9 +10,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/steebchen/prisma-client-go/generator"
-	"github.com/steebchen/prisma-client-go/jsonrpc"
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/generator"
+	"github.com/tacherasasi/goofer/jsonrpc"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 const DmmfWriteKey = "PRISMA_CLIENT_GO_WRITE_DMMF_FILE"

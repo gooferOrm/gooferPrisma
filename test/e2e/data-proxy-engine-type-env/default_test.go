@@ -16,8 +16,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steebchen/prisma-client-go/test"
-	"github.com/steebchen/prisma-client-go/test/helpers/massert"
+	"github.com/tacherasasi/goofer/test"
+	"github.com/tacherasasi/goofer/test/helpers/massert"
 )
 
 const id = "23230653-a467-47b7-aaf9-98d422da3d9e"

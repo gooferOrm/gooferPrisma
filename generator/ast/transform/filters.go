@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/steebchen/prisma-client-go/generator/types"
+	"github.com/tacherasasi/goofer/generator/types"
 )
 
 // Method defines the method for the virtual types method

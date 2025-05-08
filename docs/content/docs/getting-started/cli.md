@@ -3,26 +3,26 @@
 ## Prisma CLI with Go
 
 The go client works slightly different from the normal Prisma tooling. When you're using the go client, whenever you see
-Prisma CLI commands such as `prisma ...`, you should always write `go run github.com/steebchen/prisma-client-go ...`
+Prisma CLI commands such as `prisma ...`, you should always write `go run github.com/gooferOrm/goofer ...`
 instead.
 
 For example:
 
 ```shell script
 # just re-generate the Go client
-go run github.com/steebchen/prisma-client-go generate
+go run github.com/gooferOrm/goofer generate
 
 # sync the database with your schema for development
-go run github.com/steebchen/prisma-client-go db push
+go run github.com/gooferOrm/goofer db push
 
 # create a prisma schema from your existing database
-go run github.com/steebchen/prisma-client-go db pull
+go run github.com/gooferOrm/goofer db pull
 
 # for production use, create a migration locally
-go run github.com/steebchen/prisma-client-go migrate dev
+go run github.com/gooferOrm/goofer migrate dev
 
 # sync your production database with your migrations
-go run github.com/steebchen/prisma-client-go migrate deploy
+go run github.com/gooferOrm/goofer migrate deploy
 ```
 
 ## Shortcut
@@ -32,8 +32,8 @@ that you can write `prisma` commands as usual, but it'll invoke the real locally
 your `~/.bashrc` or `~/.zshrc` and add:
 
 ```
-alias prisma="go run github.com/steebchen/prisma-client-go"
+alias prisma="go run github.com/gooferOrm/goofer"
 ```
 
 Now `prisma generate` and any other command will work, and it'll just run
-`go run github.com/steebchen/prisma-client-go generate` under the hood.
+`go run github.com/gooferOrm/goofer generate` under the hood.

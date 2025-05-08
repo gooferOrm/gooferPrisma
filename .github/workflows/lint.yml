@@ -1,0 +1,58 @@
+name: lint all
+on: pull_request
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            go:
+              - '.golangci.yml'
+              - '.github/workflows/**/*.yml'
+              - '**/*.go'
+              - '**/*.gotpl'
+              - '**/*.mod'
+              - '**/*.sum'
+              - '**/*.work'
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: ${{ runner.os }}-go-
+
+      - name: download
+        if: steps.changes.outputs.go == 'true'
+        run: go mod download
+
+      - name: generate
+        if: steps.changes.outputs.go == 'true'
+        run: go generate ./...
+
+      - name: install golangci-lint
+        if: steps.changes.outputs.go == 'true'
+        run: curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.55.0
+
+      - name: run linter
+        if: steps.changes.outputs.go == 'true'
+        run: |
+          ./bin/golangci-lint --version
+          ./bin/golangci-lint run ./... --config .golangci.yml
+
+  editorconfig:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: editorconfig-checker/action-editorconfig-checker@main
+      - run: editorconfig-checker --exclude '(\.git|\.idea|.*\.DS_Store|docs/node_modules|docs/\.next|docs/build|\.run|.*_gen.go|LICENSE)' .

@@ -12,10 +12,10 @@ import (
 	"path"
 	"time"
 
-	"github.com/steebchen/prisma-client-go/binaries"
-	"github.com/steebchen/prisma-client-go/engine/protocol"
-	"github.com/steebchen/prisma-client-go/logger"
-	"github.com/steebchen/prisma-client-go/runtime/types"
+	"github.com/tacherasasi/goofer/binaries"
+	"github.com/tacherasasi/goofer/engine/protocol"
+	"github.com/tacherasasi/goofer/logger"
+	"github.com/tacherasasi/goofer/runtime/types"
 )
 
 func NewDataProxyEngine(schema, connectionURL string) *DataProxyEngine {

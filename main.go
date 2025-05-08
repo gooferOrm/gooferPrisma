@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/steebchen/prisma-client-go/cli"
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/cli"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 
 		switch args[0] {
 		case "prefetch":
-			// just run prisma -v to trigger the download
+			// just run goofer -v to trigger the download
 			if err := cli.Run([]string{"-v"}, true); err != nil {
 				panic(err)
 			}
@@ -25,15 +25,27 @@ func main() {
 			return
 		case "init":
 			// override default init flags
-			args = append(args, "--generator-provider", "go run github.com/steebchen/prisma-client-go")
+			args = append(args, "--generator-provider", "go run github.com/tacherasasi/goofer")
 			if err := cli.Run(args, true); err != nil {
 				panic(err)
 			}
 			os.Exit(0)
 			return
+		case "generate":
+			// just run goofer -v to trigger the download
+			if len(args) == 1 {
+				args = append(args, "--generator-provider", "go run github.com/tacherasasi/goofer")
+			}
+
+			// goofer CLI
+			if err := cli.Run(args, true); err != nil {
+				log.Fatalf("error running goofer CLI: %s", err)
+			}
+
+			return
 		}
 
-		// prisma CLI
+		// goofer CLI
 		if err := cli.Run(args, true); err != nil {
 			panic(err)
 		}
@@ -41,16 +53,16 @@ func main() {
 		return
 	}
 
-	// running the prisma generator
+	// running the goofer generator
 
-	logger.Debug.Printf("invoking prisma")
+	logger.Debug.Printf("invoking goofer")
 
-	// if this wasn't actually invoked by the prisma generator, print a warning and exit
-	if os.Getenv("PRISMA_GENERATOR_INVOCATION") == "" {
+	// if this wasn't actually invoked by the goofer generator, print a warning and exit
+	if os.Getenv("GOOFER_GENERATOR_INVOCATION") == "" {
 		logger.Info.Printf("This command is only meant to be invoked internally. Please run the following instead:")
-		logger.Info.Printf("`go run github.com/steebchen/prisma-client-go <command>`")
+		logger.Info.Printf("`go run github.com/tacherasasi/goofer <command>`")
 		logger.Info.Printf("e.g.")
-		logger.Info.Printf("`go run github.com/steebchen/prisma-client-go generate`")
+		logger.Info.Printf("`go run github.com/tacherasasi/goofer generate`")
 		os.Exit(1)
 	}
 
@@ -63,10 +75,15 @@ func main() {
 		os.Exit(1)
 	}()
 
-	if err := invokePrisma(); err != nil {
-		log.Printf("error occurred when invoking prisma: %s", err)
+	if err := invokeGoofer(); err != nil {
+		log.Printf("error occurred when invoking goofer: %s", err)
 		os.Exit(1)
 	}
 
 	logger.Debug.Printf("success")
+}
+
+func invokeGoofer() error {
+	// TODO: implement invokeGoofer
+	return nil
 }

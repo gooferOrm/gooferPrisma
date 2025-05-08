@@ -50,7 +50,7 @@ export default async function RootLayout({ children }) {
 								<span>
 									All source code and content licensed under&nbsp;
 									<a
-										href="https://github.com/steebchen/prisma-client-go/blob/main/LICENSE"
+										href="https://github.com/gooferOrm/goofer/blob/main/LICENSE"
 										target="_blank"
 									>
 										Apache 2.0
@@ -62,11 +62,11 @@ export default async function RootLayout({ children }) {
 							<Navbar
 								logo={<div>Go Prisma</div>}
 								chatLink="https://discord.gg/er3ZbmYHDk"
-								projectLink="https://github.com/steebchen/prisma-client-go"
+								projectLink="https://github.com/gooferOrm/goofer"
 							/>
 						}
 						editLink="Edit this page on GitHub"
-						docsRepositoryBase="https://github.com/steebchen/prisma-client-go/tree/main/docs"
+						docsRepositoryBase="https://github.com/gooferOrm/goofer/tree/main/docs"
 						sidebar={{ defaultMenuCollapseLevel: 1 }}
 						pageMap={await getPageMap()}
 					>

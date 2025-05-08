@@ -3,7 +3,7 @@ package types
 import (
 	"errors"
 
-	"github.com/steebchen/prisma-client-go/engine/protocol"
+	"github.com/tacherasasi/goofer/engine/protocol"
 )
 
 // ErrNotFound gets returned when a database record does not exist

@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/steebchen/prisma-client-go/helpers/gocase"
-	"github.com/steebchen/prisma-client-go/helpers/strcase"
+	"github.com/tacherasasi/goofer/helpers/gocase"
+	"github.com/tacherasasi/goofer/helpers/strcase"
 )
 
 // String acts as a builtin string but provides useful casing methods.

@@ -6,10 +6,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/steebchen/prisma-client-go/generator/ast/dmmf"
-	"github.com/steebchen/prisma-client-go/generator/ast/transform"
-	"github.com/steebchen/prisma-client-go/generator/types"
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/generator/ast/dmmf"
+	"github.com/tacherasasi/goofer/generator/ast/transform"
+	"github.com/tacherasasi/goofer/generator/types"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 // Root describes the generator output root.

@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/steebchen/prisma-client-go/runtime/builder"
-	"github.com/steebchen/prisma-client-go/runtime/transaction"
-	"github.com/steebchen/prisma-client-go/runtime/types"
+	"github.com/tacherasasi/goofer/runtime/builder"
+	"github.com/tacherasasi/goofer/runtime/transaction"
+	"github.com/tacherasasi/goofer/runtime/types"
 )
 
 func (r Raw) ExecuteRaw(query string, params ...interface{}) ExecuteExec {

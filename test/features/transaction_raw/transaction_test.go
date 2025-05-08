@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steebchen/prisma-client-go/runtime/types"
-	"github.com/steebchen/prisma-client-go/test"
-	"github.com/steebchen/prisma-client-go/test/helpers/massert"
+	"github.com/tacherasasi/goofer/runtime/types"
+	"github.com/tacherasasi/goofer/test"
+	"github.com/tacherasasi/goofer/test/helpers/massert"
 )
 
 type cx = context.Context

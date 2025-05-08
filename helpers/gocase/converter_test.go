@@ -3,7 +3,7 @@ package gocase_test
 import (
 	"testing"
 
-	"github.com/steebchen/prisma-client-go/helpers/gocase"
+	"github.com/tacherasasi/goofer/helpers/gocase"
 )
 
 func TestNew(t *testing.T) {

@@ -1,8 +1,8 @@
 package transform
 
 import (
-	"github.com/steebchen/prisma-client-go/generator/ast/dmmf"
-	"github.com/steebchen/prisma-client-go/generator/types"
+	"github.com/tacherasasi/goofer/generator/ast/dmmf"
+	"github.com/tacherasasi/goofer/generator/types"
 )
 
 type Index struct {

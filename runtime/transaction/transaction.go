@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/steebchen/prisma-client-go/engine"
-	"github.com/steebchen/prisma-client-go/engine/protocol"
-	"github.com/steebchen/prisma-client-go/runtime/builder"
+	"github.com/tacherasasi/goofer/engine"
+	"github.com/tacherasasi/goofer/engine/protocol"
+	"github.com/tacherasasi/goofer/runtime/builder"
 )
 
 type TX struct {

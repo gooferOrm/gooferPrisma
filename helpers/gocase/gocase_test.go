@@ -6,7 +6,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/steebchen/prisma-client-go/helpers/gocase"
+	"github.com/tacherasasi/goofer/helpers/gocase"
 )
 
 func TestConverter_ToLower(t *testing.T) {

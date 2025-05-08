@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/steebchen/prisma-client-go/test"
+	"github.com/tacherasasi/goofer/test"
 )
 
 type cx = context.Context

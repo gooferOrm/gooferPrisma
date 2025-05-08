@@ -1,4 +1,4 @@
-module github.com/steebchen/prisma-client-go
+module github.com/gooferOrm/goofer
 
 go 1.21
 

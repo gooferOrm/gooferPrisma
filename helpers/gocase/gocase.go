@@ -35,7 +35,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/steebchen/prisma-client-go/helpers/strcase"
+	"github.com/tacherasasi/goofer/helpers/strcase"
 )
 
 // ToLower returns a string converted to Go upper case.

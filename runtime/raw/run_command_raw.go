@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/steebchen/prisma-client-go/runtime/builder"
+	"github.com/tacherasasi/goofer/runtime/builder"
 )
 
 func (r Raw) RunCommandRaw(cmd interface{}) RunCommandExec {

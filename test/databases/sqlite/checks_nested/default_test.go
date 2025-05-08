@@ -8,9 +8,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steebchen/prisma-client-go/test"
-	db "github.com/steebchen/prisma-client-go/test/databases/sqlite/checks_nested/prisma"
-	"github.com/steebchen/prisma-client-go/test/helpers/massert"
+	"github.com/tacherasasi/goofer/test"
+	db "github.com/tacherasasi/goofer/test/databases/sqlite/checks_nested/prisma"
+	"github.com/tacherasasi/goofer/test/helpers/massert"
 )
 
 type cx = context.Context

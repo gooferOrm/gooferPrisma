@@ -42,7 +42,7 @@ End-to-end tests require third party credentials and may also be flaky from time
 locally by default and optional in CI.
 
 To run them locally, you need to set up all required credentials (check
-the [env vars used for CI](https://github.com/steebchen/prisma-client-go/blob/a8a05c34aadd035303ea4651fcf6187cc4d039a0/.github/workflows/e2e-test.yml#L43),
+the [env vars used for CI](https://github.com/gooferOrm/goofer/blob/a8a05c34aadd035303ea4651fcf6187cc4d039a0/.github/workflows/e2e-test.yml#L43),
 and then run:
 
 ```sh

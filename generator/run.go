@@ -11,10 +11,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/steebchen/prisma-client-go/binaries"
-	"github.com/steebchen/prisma-client-go/binaries/bindata"
-	"github.com/steebchen/prisma-client-go/binaries/platform"
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/binaries"
+	"github.com/tacherasasi/goofer/binaries/bindata"
+	"github.com/tacherasasi/goofer/binaries/platform"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 const DefaultPackageName = "db"
@@ -40,7 +40,7 @@ func Run(input *Root) error {
 	addDefaults(input)
 
 	if input.Version != binaries.EngineVersion {
-		fmt.Printf("\nwarning: prisma CLI version mismatch detected. CLI version: %s, internal version: %s (%s); please see https://github.com/steebchen/prisma-client-go/issues/1099 for details\n\n", input.Version, binaries.EngineVersion, binaries.PrismaVersion)
+		fmt.Printf("\nwarning: prisma CLI version mismatch detected. CLI version: %s, internal version: %s (%s); please see https://github.com/tacherasasi/goofer/issues/1099 for details\n\n", input.Version, binaries.EngineVersion, binaries.PrismaVersion)
 	}
 
 	if input.Generator.Config.DisableGitignore != "true" && input.Generator.Config.DisableGoBinaries != "true" {

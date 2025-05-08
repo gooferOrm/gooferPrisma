@@ -1,4 +1,4 @@
-//go:generate go run github.com/steebchen/prisma-client-go generate --schema schemax.prisma
+//go:generate go run github.com/tacherasasi/goofer generate --schema schemax.prisma
 
 package main
 

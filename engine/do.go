@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 var errNotFound = fmt.Errorf("not found; re-upload schema")

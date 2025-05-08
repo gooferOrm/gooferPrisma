@@ -7,7 +7,7 @@ import (
 	"log"
 	"os/exec"
 
-	"github.com/steebchen/prisma-client-go/logger"
+	"github.com/tacherasasi/goofer/logger"
 )
 
 type Messsage struct {

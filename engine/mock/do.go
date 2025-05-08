@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/steebchen/prisma-client-go/engine/protocol"
+	"github.com/tacherasasi/goofer/engine/protocol"
 )
 
 func (e *Engine) Do(_ context.Context, payload interface{}, v interface{}) error {

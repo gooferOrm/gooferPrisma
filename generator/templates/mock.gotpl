@@ -1,4 +1,4 @@
-{{- /*gotype:github.com/steebchen/prisma-client-go/generator.Root*/ -}}
+{{- /*gotype:github.com/gooferOrm/goofer/generator.Root*/ -}}
 
 func NewMock() (*PrismaClient, *Mock, func(t *testing.T)) {
 	expectations := new([]mock.Expectation)

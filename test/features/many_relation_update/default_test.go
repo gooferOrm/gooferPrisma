@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steebchen/prisma-client-go/test"
+	"github.com/tacherasasi/goofer/test"
 )
 
 func TestFindManyRelationUpdateLink(t *testing.T) {

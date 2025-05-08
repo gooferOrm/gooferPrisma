@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/steebchen/prisma-client-go/generator/ast/dmmf"
+	"github.com/tacherasasi/goofer/generator/ast/dmmf"
 )
 
 type AST struct {
