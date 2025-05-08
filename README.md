@@ -5,7 +5,7 @@ Goofer is a modern, type-safe ORM for Go with automatic migrations and powerful 
 ## Quick Start
 
 ```bash
-go run github.com/tacherasasi/goofer generate
+go run github.com/gooferOrm/goofer generate
 ```
 
 ## Features

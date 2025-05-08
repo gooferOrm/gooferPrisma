@@ -12,10 +12,10 @@ import (
 	"path"
 	"time"
 
-	"github.com/tacherasasi/goofer/binaries"
-	"github.com/tacherasasi/goofer/engine/protocol"
+	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/gooferngine/protocol"
+	"github.com/gooferOrm/gooferuntime/types"
 	"github.com/tacherasasi/goofer/logger"
-	"github.com/tacherasasi/goofer/runtime/types"
 )
 
 func NewDataProxyEngine(schema, connectionURL string) *DataProxyEngine {

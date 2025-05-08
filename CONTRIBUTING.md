@@ -20,7 +20,7 @@ Goofer is an advanced ORM with unique features:
 ## Development Setup
 
 ```bash
-git clone https://github.com/tacherasasi/goofer.git
+git clone https://github.com/gooferOrm/goofer.git
 cd goofer
 go mod tidy
 go test ./...

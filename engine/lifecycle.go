@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/joho/godotenv"
-
-	"github.com/tacherasasi/goofer/binaries"
-	"github.com/tacherasasi/goofer/binaries/platform"
-	"github.com/tacherasasi/goofer/binaries/unpack"
-	"github.com/tacherasasi/goofer/generator"
 	"github.com/tacherasasi/goofer/logger"
+
+	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/goofer/generator"
+	"github.com/gooferOrm/gooferinaries/platform"
+	"github.com/gooferOrm/gooferinaries/unpack"
 )
 
 func (e *QueryEngine) Connect() error {
@@ -176,7 +176,7 @@ func (e *QueryEngine) ensure() (string, error) {
 	logger.Debug.Printf("version check took %s", time.Since(startVersion))
 
 	if v := strings.TrimSpace(strings.Replace(string(out), "query-engine", "", 1)); binaries.EngineVersion != v {
-		note := "Did you forget to run `go run github.com/tacherasasi/goofer generate`?"
+		note := "Did you forget to run `go run github.com/gooferOrm/gooferenerate`?"
 		msg := fmt.Errorf("expected query engine version `%s` but got `%s`\n%s", binaries.EngineVersion, v, note)
 		if forceVersion {
 			return "", msg

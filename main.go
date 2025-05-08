@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/tacherasasi/goofer/cli"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/cli"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 			return
 		case "init":
 			// override default init flags
-			args = append(args, "--generator-provider", "go run github.com/tacherasasi/goofer")
+			args = append(args, "--generator-provider", "go run github.com/gooferOrm/goofer")
 			if err := cli.Run(args, true); err != nil {
 				panic(err)
 			}
@@ -34,7 +34,7 @@ func main() {
 		case "generate":
 			// just run goofer -v to trigger the download
 			if len(args) == 1 {
-				args = append(args, "--generator-provider", "go run github.com/tacherasasi/goofer")
+				args = append(args, "--generator-provider", "go run github.com/gooferOrm/goofer")
 			}
 
 			// goofer CLI
@@ -60,9 +60,9 @@ func main() {
 	// if this wasn't actually invoked by the goofer generator, print a warning and exit
 	if os.Getenv("GOOFER_GENERATOR_INVOCATION") == "" {
 		logger.Info.Printf("This command is only meant to be invoked internally. Please run the following instead:")
-		logger.Info.Printf("`go run github.com/tacherasasi/goofer <command>`")
+		logger.Info.Printf("`go run github.com/gooferOrm/goofer <command>`")
 		logger.Info.Printf("e.g.")
-		logger.Info.Printf("`go run github.com/tacherasasi/goofer generate`")
+		logger.Info.Printf("`go run github.com/gooferOrm/goofer generate`")
 		os.Exit(1)
 	}
 

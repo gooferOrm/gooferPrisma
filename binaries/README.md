@@ -36,7 +36,7 @@ sh publish.sh <version>
 sh publish.sh 3.0.0
 ```
 
-You can check the available versions on the [Goofer releases page](https://github.com/tacherasasi/goofer/releases).
+You can check the available versions on the [Goofer releases page](https://github.com/gooferOrm/goofer/releases).
 
 **NOTE**:
 

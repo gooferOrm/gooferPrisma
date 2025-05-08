@@ -119,7 +119,7 @@ func NewQueryProfiler(slowThreshold time.Duration) *QueryProfiler {
 
 1. **Code Generation**
    ```bash
-   go run github.com/tacherasasi/goofer generate
+   go run github.com/gooferOrm/goofer generate
    ```
 
 2. **Testing**

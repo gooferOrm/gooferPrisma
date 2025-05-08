@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tacherasasi/goofer/engine/protocol"
+	"github.com/gooferOrm/goofer/engine/protocol"
+	"github.com/gooferOrm/gooferuntime/types"
 	"github.com/tacherasasi/goofer/logger"
-	"github.com/tacherasasi/goofer/runtime/types"
 )
 
 var internalUpdateNotFoundMessage = "Error occurred during query execution: InterpretationError(\"Error for binding '0'\", Some(QueryGraphBuilderError(RecordNotFound(\"Record to update not found.\"))))"
