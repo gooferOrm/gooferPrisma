@@ -1,52 +1,52 @@
-# Contributing
+# Contributing to Goofer
 
-## PRs Welcome
+## Welcome!
 
-We welcome contributions to this project. For small things, feel free to directly create a PR. For major changes, please
-open an issue first to discuss the changes.
+Thank you for considering contributing to Goofer, a modern, type-safe ORM for Go.
 
-## Writing Commit Messages
+## Project Overview
 
-We use [conventional commits](https://www.conventionalcommits.org) (also known as semantic commits) to ensure consistent
-and descriptive commit messages.
+Goofer is an advanced ORM with unique features:
+- Query Caching
+- Automatic Database Sharding
+- Advanced Query Profiling
 
-## Tests
+## Getting Started
 
-### Running tests
+1. Fork the repository
+2. Clone your fork
+3. Create a new branch for your feature
 
-```shell
-# setup deps & generate code – requires docker to be installed
-# this starts a docker compose stack with all required databases
-go generate -tags setup ./...
-# if you already ran setup, just run the following
-go generate ./...
-go test ./... -v
+## Development Setup
 
-# to teardown docker containers:
-go generate -tags teardown ./...
+```bash
+git clone https://github.com/tacherasasi/goofer.git
+cd goofer
+go mod tidy
+go test ./...
 ```
 
-### How integration tests work
+## Contribution Guidelines
 
-Most test live in the `test/` directory and are integration tests of the generated client. That means there's a Prisma
-schema and before running the test, the client needs to be generated first. There may be table-driven tests which, on
-each individual test run, creates a new isolated database, runs migrations, then run the tests, and finally cleans up
-the database afterwards.
+### Code Style
+- Follow Go best practices
+- Use `gofmt` for formatting
+- Write clear, concise comments
 
-You can also run individual code generation tests via your editor, however keep in mind you need to run
-`go generate ./...` before in the directory of the tests you want to run.
+### Testing
+- Add unit tests for new features
+- Ensure 100% test coverage for new code
 
-### E2E tests
+### Pull Request Process
+1. Update documentation
+2. Add tests for your changes
+3. Ensure all tests pass
+4. Submit a pull request
 
-End-to-end tests require third party credentials and may also be flaky from time to time. This is why they are not run
-locally by default and optional in CI.
+## Code of Conduct
 
-To run them locally, you need to set up all required credentials (check
-the [env vars used for CI](https://github.com/gooferOrm/goofer/blob/a8a05c34aadd035303ea4651fcf6187cc4d039a0/.github/workflows/e2e-test.yml#L43),
-and then run:
+Be respectful, inclusive, and constructive in all interactions.
 
-```sh
-cd test/e2e/
-go generate -tags e2e ./...
-go test ./... -run '^TestE2E.*$' -tags e2e -v
-```
+## Questions?
+
+Open an issue or discuss in our community channels.
