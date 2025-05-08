@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/tacherasasi/goofer/runtime/builder"
-	"github.com/tacherasasi/goofer/runtime/transaction"
+	"github.com/gooferOrm/goofer/runtime/builder"
+	"github.com/gooferOrm/gooferuntime/transaction"
 )
 
 func (r Raw) QueryRaw(query string, params ...interface{}) QueryExec {

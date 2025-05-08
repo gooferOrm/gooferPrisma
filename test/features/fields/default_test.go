@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test"
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test"
+	"github.com/gooferOrm/gooferest/helpers/massert"
 )
 
 type cx = context.Context

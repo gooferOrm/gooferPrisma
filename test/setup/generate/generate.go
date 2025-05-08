@@ -38,7 +38,7 @@ func generate() {
 
 	// prefetch the binaries first
 	// generating in this folder makes sure binaries are unpacked
-	cmd := exec.Command("go", "run", "github.com/tacherasasi/goofer", "generate")
+	cmd := exec.Command("go", "run", "github.com/gooferOrm/goofer", "generate")
 	cmd.Stderr = os.Stderr
 	cmd.Stdout = os.Stdout
 	if err := cmd.Run(); err != nil {
@@ -64,7 +64,7 @@ func generate() {
 		go func(file string) {
 			defer wg.Done()
 
-			genCmd := exec.Command("go", "run", "github.com/tacherasasi/goofer", "generate")
+			genCmd := exec.Command("go", "run", "github.com/gooferOrm/goofer "generate")
 			genCmd.Dir = filepath.Dir(file)
 			genCmd.Stderr = os.Stderr
 			genCmd.Stdout = os.Stdout

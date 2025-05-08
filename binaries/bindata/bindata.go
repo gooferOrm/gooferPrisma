@@ -6,8 +6,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/tacherasasi/goofer/binaries"
-	"github.com/tacherasasi/goofer/binaries/platform"
+	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/gooferinaries/platform"
 )
 
 // TODO go fmt files after creation
@@ -41,7 +41,7 @@ func writeHeader(w io.Writer, pkg string, name string, info platform.Info) error
 package %s
 
 import (
-	"github.com/tacherasasi/goofer/binaries/unpack"
+	"github.com/gooferOrm/gooferinaries/unpack"
 )
 
 func init() {

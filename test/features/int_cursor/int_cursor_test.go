@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test"
-	"github.com/tacherasasi/goofer/test/helpers/massert"
-	"github.com/tacherasasi/goofer/test/setup/mysql"
-	"github.com/tacherasasi/goofer/test/setup/postgresql"
-	"github.com/tacherasasi/goofer/test/setup/sqlite"
+	"github.com/gooferOrm/goofer/test"
+	"github.com/gooferOrm/gooferest/helpers/massert"
+	"github.com/gooferOrm/gooferest/setup/mysql"
+	"github.com/gooferOrm/gooferest/setup/postgresql"
+	"github.com/gooferOrm/gooferest/setup/sqlite"
 )
 
 type cx = context.Context

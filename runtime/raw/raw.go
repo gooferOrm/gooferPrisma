@@ -8,10 +8,10 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/tacherasasi/goofer/engine"
-	"github.com/tacherasasi/goofer/logger"
-	"github.com/tacherasasi/goofer/runtime/builder"
-	"github.com/tacherasasi/goofer/runtime/types/raw"
+	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/goofer/logger"
+	"github.com/gooferOrm/gooferuntime/builder"
+	"github.com/gooferOrm/gooferuntime/types/raw"
 )
 
 type Raw struct {

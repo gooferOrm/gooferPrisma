@@ -1,7 +1,7 @@
 //go:build e2e
 // +build e2e
 
-//go:generate go run github.com/tacherasasi/goofer generate
+//go:generate go run github.com/gooferOrm/goofer generate
 
 // This test checks whether the data proxy works with engineType=dataproxy and the schema string
 // being provided via an env var defined in the prisma schema
@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tacherasasi/goofer/test"
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test"
+	"github.com/gooferOrm/gooferest/helpers/massert"
 )
 
 const id = "23230653-a467-47b7-aaf9-98d422da3d9e"

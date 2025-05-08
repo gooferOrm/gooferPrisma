@@ -3,8 +3,8 @@ package transform
 import (
 	"strings"
 
-	"github.com/tacherasasi/goofer/generator/ast/dmmf"
-	"github.com/tacherasasi/goofer/generator/types"
+	"github.com/gooferOrm/goofer/generator/ast/dmmf"
+	"github.com/gooferOrm/gooferenerator/types"
 )
 
 const list = "List"

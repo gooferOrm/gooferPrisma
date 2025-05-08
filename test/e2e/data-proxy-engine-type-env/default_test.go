@@ -1,3 +1,5 @@
+
+w
 //go:build e2e
 // +build e2e
 
@@ -16,8 +18,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tacherasasi/goofer/test"
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test"
+	"github.com/gooferOrm/gooferest/helpers/massert"
 )
 
 const id = "23230653-a467-47b7-aaf9-98d422da3d9e"

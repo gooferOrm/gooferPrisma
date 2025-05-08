@@ -11,9 +11,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/tacherasasi/goofer/binaries"
-	"github.com/tacherasasi/goofer/binaries/bindata"
-	"github.com/tacherasasi/goofer/binaries/platform"
+	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/gooferinaries/bindata"
+	"github.com/gooferOrm/gooferinaries/platform"
 	"github.com/tacherasasi/goofer/logger"
 )
 
@@ -40,7 +40,7 @@ func Run(input *Root) error {
 	addDefaults(input)
 
 	if input.Version != binaries.EngineVersion {
-		fmt.Printf("\nwarning: prisma CLI version mismatch detected. CLI version: %s, internal version: %s (%s); please see https://github.com/tacherasasi/goofer/issues/1099 for details\n\n", input.Version, binaries.EngineVersion, binaries.PrismaVersion)
+		fmt.Printf("\nwarning: prisma CLI version mismatch detected. CLI version: %s, internal version: %s (%s); please see https://github.com/gooferOrm/gooferssues/1099 for details\n\n", input.Version, binaries.EngineVersion, binaries.PrismaVersion)
 	}
 
 	if input.Generator.Config.DisableGitignore != "true" && input.Generator.Config.DisableGoBinaries != "true" {

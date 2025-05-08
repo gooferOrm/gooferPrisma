@@ -6,9 +6,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/tacherasasi/goofer/generator/ast/dmmf"
-	"github.com/tacherasasi/goofer/generator/ast/transform"
-	"github.com/tacherasasi/goofer/generator/types"
+	"github.com/gooferOrm/goofer/generator/ast/dmmf"
+	"github.com/gooferOrm/gooferenerator/ast/transform"
+	"github.com/gooferOrm/gooferenerator/types"
 	"github.com/tacherasasi/goofer/logger"
 )
 

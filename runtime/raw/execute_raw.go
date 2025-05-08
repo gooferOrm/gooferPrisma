@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tacherasasi/goofer/runtime/builder"
-	"github.com/tacherasasi/goofer/runtime/transaction"
-	"github.com/tacherasasi/goofer/runtime/types"
+	"github.com/gooferOrm/goofer/runtime/builder"
+	"github.com/gooferOrm/gooferuntime/transaction"
+	"github.com/gooferOrm/gooferuntime/types"
 )
 
 func (r Raw) ExecuteRaw(query string, params ...interface{}) ExecuteExec {

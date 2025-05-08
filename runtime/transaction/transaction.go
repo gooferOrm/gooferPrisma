@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tacherasasi/goofer/engine"
-	"github.com/tacherasasi/goofer/engine/protocol"
-	"github.com/tacherasasi/goofer/runtime/builder"
+	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/gooferngine/protocol"
+	"github.com/gooferOrm/gooferuntime/builder"
 )
 
 type TX struct {

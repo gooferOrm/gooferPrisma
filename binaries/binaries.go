@@ -10,8 +10,8 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/tacherasasi/goofer/binaries/platform"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/binaries/platform"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 // PrismaURL points to an S3 bucket URL where the CLI binaries are stored.

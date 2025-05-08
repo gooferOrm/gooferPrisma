@@ -8,14 +8,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tacherasasi/goofer/cli"
-	"github.com/tacherasasi/goofer/engine"
-	"github.com/tacherasasi/goofer/engine/protocol"
-	"github.com/tacherasasi/goofer/test/cmd"
-	"github.com/tacherasasi/goofer/test/setup/mongodb"
-	"github.com/tacherasasi/goofer/test/setup/mysql"
-	"github.com/tacherasasi/goofer/test/setup/postgresql"
-	"github.com/tacherasasi/goofer/test/setup/sqlite"
+	"github.com/gooferOrm/goofer/cli"
+	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/gooferest/cmd"
+	"github.com/gooferOrm/gooferest/setup/mongodb"
+	"github.com/gooferOrm/gooferest/setup/mysql"
+	"github.com/gooferOrm/gooferest/setup/postgresql"
+	"github.com/gooferOrm/gooferest/setup/sqlite"
+	"github.com/gooferOrm/gooferngine/protocol"
 )
 
 type Database interface {

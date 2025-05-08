@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/tacherasasi/goofer/helpers/gocase"
-	"github.com/tacherasasi/goofer/helpers/strcase"
+	"github.com/gooferOrm/goofer/helpers/gocase"
+	"github.com/gooferOrm/gooferelpers/strcase"
 )
 
 // String acts as a builtin string but provides useful casing methods.

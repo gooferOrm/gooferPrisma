@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tacherasasi/goofer/engine"
-	"github.com/tacherasasi/goofer/engine/protocol"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/goofer/logger"
+	"github.com/gooferOrm/gooferngine/protocol"
 )
 
 type MethodFormat string
@@ -210,7 +210,7 @@ func (q Query) buildOutputs(outputs []Output) (string, error) {
 	return builder.String(), nil
 }
 
-var ErrDuplicateField = fmt.Errorf("duplicate field (https://github.com/tacherasasi/goofer/issues/1095)")
+var ErrDuplicateField = fmt.Errorf("duplicate field (https://github.com/gooferOrm/gooferssues/1095)")
 
 func (q Query) buildFields(list bool, wrapList bool, fields []Field) (string, error) {
 	var builder strings.Builder

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/tacherasasi/goofer/engine"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 type Result struct {

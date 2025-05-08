@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test/cmd"
-	"github.com/tacherasasi/goofer/test/setup"
+	"github.com/gooferOrm/goofer/test/cmd"
+	"github.com/gooferOrm/gooferest/setup"
 )
 
 const containerName = "go-client-mysql"
