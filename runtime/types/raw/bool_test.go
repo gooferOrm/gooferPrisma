@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test/helpers/massert"
 )
 
 func TestBool_UnmarshalJSON(t *testing.T) {

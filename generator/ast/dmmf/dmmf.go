@@ -1,7 +1,7 @@
 package dmmf
 
 import (
-	"github.com/tacherasasi/goofer/generator/types"
+	"github.com/gooferOrm/goofer/generator/types"
 )
 
 // FieldKind describes a scalar, object or enum.

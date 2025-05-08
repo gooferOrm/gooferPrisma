@@ -3,7 +3,7 @@ package gocase_test
 import (
 	"testing"
 
-	"github.com/tacherasasi/goofer/helpers/gocase"
+	"github.com/gooferOrm/goofer/helpers/gocase"
 )
 
 func TestNew(t *testing.T) {

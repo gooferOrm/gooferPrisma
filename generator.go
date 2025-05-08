@@ -10,9 +10,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/tacherasasi/goofer/generator"
-	"github.com/tacherasasi/goofer/jsonrpc"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/generator"
+	"github.com/gooferOrm/goofer/jsonrpc"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 const DmmfWriteKey = "PRISMA_CLIENT_GO_WRITE_DMMF_FILE"

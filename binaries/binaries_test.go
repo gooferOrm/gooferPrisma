@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test/helpers/massert"
 )
 
 func tmpDir(t *testing.T) string {

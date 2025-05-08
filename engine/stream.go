@@ -7,7 +7,7 @@ import (
 	"log"
 	"os/exec"
 
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 type Messsage struct {

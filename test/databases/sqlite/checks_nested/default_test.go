@@ -8,9 +8,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test"
-	db "github.com/tacherasasi/goofer/test/databases/sqlite/checks_nested/prisma"
-	"github.com/tacherasasi/goofer/test/helpers/massert"
+	"github.com/gooferOrm/goofer/test"
+	db "github.com/gooferOrm/gooferest/databases/sqlite/checks_nested/prisma"
+	"github.com/gooferOrm/gooferest/helpers/massert"
 )
 
 type cx = context.Context

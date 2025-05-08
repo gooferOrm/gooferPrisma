@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/tacherasasi/goofer/generator/ast/dmmf"
+	"github.com/gooferOrm/goofer/generator/ast/dmmf"
 )
 
 type AST struct {

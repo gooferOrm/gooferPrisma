@@ -3,7 +3,7 @@ package mock
 import (
 	"testing"
 
-	"github.com/tacherasasi/goofer/runtime/builder"
+	"github.com/gooferOrm/goofer/runtime/builder"
 )
 
 type Expectation struct {

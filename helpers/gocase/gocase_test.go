@@ -6,7 +6,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/tacherasasi/goofer/helpers/gocase"
+	"github.com/gooferOrm/goofer/helpers/gocase"
 )
 
 func TestConverter_ToLower(t *testing.T) {

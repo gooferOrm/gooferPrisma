@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tacherasasi/goofer/runtime/builder"
+	"github.com/gooferOrm/goofer/runtime/builder"
 )
 
 func (r Raw) RunCommandRaw(cmd interface{}) RunCommandExec {

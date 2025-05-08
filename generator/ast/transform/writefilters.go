@@ -1,7 +1,7 @@
 package transform
 
 import (
-	"github.com/tacherasasi/goofer/generator/types"
+	"github.com/gooferOrm/goofer/generator/types"
 )
 
 func (r *AST) writeFilters() []Filter {

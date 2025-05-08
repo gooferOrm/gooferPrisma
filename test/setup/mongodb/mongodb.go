@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tacherasasi/goofer/test/setup"
+	"github.com/gooferOrm/goofer/test/setup"
 )
 
 var MongoDB = &mongoDB{}

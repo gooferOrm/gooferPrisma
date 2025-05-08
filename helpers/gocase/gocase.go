@@ -35,7 +35,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/tacherasasi/goofer/helpers/strcase"
+	"github.com/gooferOrm/goofer/helpers/strcase"
 )
 
 // ToLower returns a string converted to Go upper case.

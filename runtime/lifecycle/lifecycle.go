@@ -1,7 +1,7 @@
 package lifecycle
 
 import (
-	"github.com/tacherasasi/goofer/engine"
+	"github.com/gooferOrm/goofer/engine"
 )
 
 type Lifecycle struct {

@@ -3,7 +3,7 @@ package types
 import (
 	"errors"
 
-	"github.com/tacherasasi/goofer/engine/protocol"
+	"github.com/gooferOrm/goofer/engine/protocol"
 )
 
 // ErrNotFound gets returned when a database record does not exist

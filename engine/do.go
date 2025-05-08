@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 var errNotFound = fmt.Errorf("not found; re-upload schema")
