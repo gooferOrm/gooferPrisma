@@ -1,0 +1,31 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:dev.db"
+}
+
+generator db {
+  provider         = "go run github.com/steebchen/prisma-client-go"
+  disableGitignore = true
+}
+
+model User {
+  id        String   @id @default(cuid()) @map("_id")
+  createdAt DateTime @default(now())
+  email     String   @unique
+  name      String?
+  age       Int?
+
+  posts Post[]
+}
+
+model Post {
+  id        String   @id @default(cuid()) @map("_id")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  published Boolean
+  title     String
+  content   String?
+
+  author   User   @relation(fields: [authorID], references: [id])
+  authorID String
+}

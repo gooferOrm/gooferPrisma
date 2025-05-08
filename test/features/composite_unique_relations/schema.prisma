@@ -1,0 +1,34 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("__REPLACE__")
+}
+
+generator db {
+  provider          = "go run github.com/steebchen/prisma-client-go"
+  output            = "."
+  disableGoBinaries = true
+  package           = "db"
+}
+
+model User {
+  id           String        @id @default(cuid()) @map("_id")
+  participants Participant[]
+}
+
+model Participant {
+  id      String  @id @default(cuid()) @map("_id")
+  unused1 String? @unique
+  unused2 String? @unique
+  user    User    @relation(fields: [userId], references: [id])
+  userId  String
+  event   Event   @relation(fields: [eventId], references: [id])
+  eventId String
+
+  @@unique([userId, eventId], name: "MyCustomKey")
+  @@unique([eventId, id], name: "Unused")
+}
+
+model Event {
+  id           String        @id @default(cuid()) @map("_id")
+  participants Participant[]
+}

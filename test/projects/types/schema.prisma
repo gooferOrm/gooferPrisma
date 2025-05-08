@@ -1,0 +1,72 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("__REPLACE__")
+}
+
+generator db {
+  provider          = "go run github.com/steebchen/prisma-client-go"
+  output            = "."
+  disableGitignore  = true
+  disableGoBinaries = true
+  package           = "types"
+}
+
+model Client {
+  id String @id @map("_id")
+}
+
+// test for a reserved go keyword as model name
+model Type {
+  id String @id @map("_id")
+}
+
+model User {
+  id        String   @id @default(cuid()) @map("_id")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  UpperCaseTest     String?
+  lowerCaseTest     String?
+  snake_case_test   String?
+  wEiRdLycasED_test String?
+
+  str      String
+  strOpt   String?
+  int      Int
+  intOpt   Int?
+  float    Float
+  floatOpt Float?
+  bool     Boolean
+  boolOpt  Boolean?
+  date     DateTime
+  dateOpt  DateTime?
+
+  // test for a reserved model names
+  chan      String?
+  map       String?
+  continue  String?
+  break     String?
+  const     String?
+  var       String?
+  for       String?
+  range     String?
+  return    String?
+  switch    String?
+  struct    String?
+  go        String?
+  interface String?
+  defer     String?
+
+  type String
+
+  // special names
+  relation   String?
+  with       String?
+  model      String?
+  field      String?
+  findOne    String?
+  output     String?
+  input      String?
+  params     String?
+  set_params String?
+}

@@ -1,0 +1,145 @@
+// Package db tests for json filters just for MySQL, as the generated client syntax differs
+package db
+
+import (
+	"context"
+	"encoding/json"
+	"testing"
+
+	"github.com/steebchen/prisma-client-go/test"
+	"github.com/steebchen/prisma-client-go/test/helpers/massert"
+)
+
+type cx = context.Context
+type Func func(t *testing.T, client *PrismaClient, ctx cx)
+
+func TestJSON(t *testing.T) {
+	t.Parallel()
+
+	tests := []struct {
+		name   string
+		before []string
+		run    Func
+	}{{
+		name: "json filter",
+		run: func(t *testing.T, client *PrismaClient, ctx cx) {
+			_, err := client.User.CreateOne(
+				User.JSON.Set([]byte(`{"test":"x"}`)),
+				User.JSONOpt.Set([]byte(`"hi"`)),
+				User.ID.Set("456"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			x := struct {
+				Attr string `json:"attr"`
+			}{
+				Attr: "some stuff here",
+			}
+			data, err := json.Marshal(x)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			created, err := client.User.CreateOne(
+				User.JSON.Set(data),
+				User.JSONOpt.Set([]byte(`"hi"`)),
+				User.ID.Set("123"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			var opt JSON = []byte(`"hi"`)
+			expected := &UserModel{
+				InnerUser: InnerUser{
+					ID:      "123",
+					JSON:    data,
+					JSONOpt: &opt,
+				},
+			}
+
+			massert.Equal(t, expected, created)
+
+			actual, err := client.User.FindFirst(
+				User.JSON.Path([]string{"attr"}),
+				User.JSON.StringContains("stuff"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			massert.Equal(t, expected, actual)
+		},
+	}, {
+		name: "json filter nested",
+		run: func(t *testing.T, client *PrismaClient, ctx cx) {
+			_, err := client.User.CreateOne(
+				User.JSON.Set([]byte(`{"test":"x"}`)),
+				User.JSONOpt.Set([]byte(`"hi"`)),
+				User.ID.Set("456"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			x := struct {
+				Obj struct {
+					NestedAttr string `json:"nested_attr"`
+				} `json:"obj"`
+			}{
+				Obj: struct {
+					NestedAttr string `json:"nested_attr"`
+				}{
+					NestedAttr: "some stuff here",
+				},
+			}
+			data, err := json.Marshal(x)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			created, err := client.User.CreateOne(
+				User.JSON.Set(data),
+				User.JSONOpt.Set([]byte(`"hi"`)),
+				User.ID.Set("123"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			var opt JSON = []byte(`"hi"`)
+			expected := &UserModel{
+				InnerUser: InnerUser{
+					ID:      "123",
+					JSON:    data,
+					JSONOpt: &opt,
+				},
+			}
+
+			massert.Equal(t, expected, created)
+
+			actual, err := client.User.FindFirst(
+				User.JSON.Path([]string{"obj", "nested_attr"}),
+				User.JSON.StringContains("stuff"),
+			).Exec(ctx)
+			if err != nil {
+				t.Fatalf("fail %s", err)
+			}
+
+			massert.Equal(t, expected, actual)
+		},
+	}}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			test.RunSerial(t, []test.Database{test.PostgreSQL}, func(t *testing.T, db test.Database, ctx context.Context) {
+				client := NewClient()
+				mockDBName := test.Start(t, db, client.Engine, tt.before)
+				defer test.End(t, db, client.Engine, mockDBName)
+				tt.run(t, client, context.Background())
+			})
+		})
+	}
+}

@@ -1,0 +1,6 @@
+node_modules/
+.next/
+public/*.xml
+public/robots.txt
+_pagefind/
+.env
