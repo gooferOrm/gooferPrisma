@@ -9,7 +9,7 @@ import (
 
 	"github.com/gooferOrm/goofer/engine"
 	"github.com/gooferOrm/goofer/logger"
-	"github.com/gooferOrm/gooferngine/protocol"
+	"github.com/gooferOrm/goofer/engine/protocol"
 )
 
 type MethodFormat string

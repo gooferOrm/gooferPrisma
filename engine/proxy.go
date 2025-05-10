@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/goofer/engine/protocol"
 	"github.com/gooferOrm/goofer/runtime/types"
-	"github.com/gooferOrm/gooferngine/protocol"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 func NewDataProxyEngine(schema, connectionURL string) *DataProxyEngine {

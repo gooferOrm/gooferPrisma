@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/gooferOrm/goofer/binaries"
-	"github.com/gooferOrm/gooferinaries/platform"
+	"github.com/gooferOrm/goofer/binaries/platform"
 )
 
 // TODO go fmt files after creation

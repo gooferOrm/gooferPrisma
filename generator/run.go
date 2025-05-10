@@ -12,9 +12,9 @@ import (
 	"text/template"
 
 	"github.com/gooferOrm/goofer/binaries"
-	"github.com/gooferOrm/gooferinaries/bindata"
-	"github.com/gooferOrm/gooferinaries/platform"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/binaries/bindata"
+	"github.com/gooferOrm/goofer/binaries/platform"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 const DefaultPackageName = "db"

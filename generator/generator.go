@@ -9,7 +9,7 @@ import (
 	"github.com/gooferOrm/goofer/generator/ast/dmmf"
 	"github.com/gooferOrm/goofer/generator/ast/transform"
 	"github.com/gooferOrm/goofer/generator/types"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/logger"
 )
 
 // Root describes the generator output root.

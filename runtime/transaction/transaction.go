@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/goofer/engine/protocol"
 	"github.com/gooferOrm/goofer/runtime/builder"
-	"github.com/gooferOrm/gooferngine/protocol"
 )
 
 type TX struct {

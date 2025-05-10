@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gooferOrm/goofer/helpers/gocase"
-	"github.com/gooferOrm/gooferelpers/strcase"
+	"github.com/gooferOrm/goofer/helpers/strcase"
 )
 
 // String acts as a builtin string but provides useful casing methods.

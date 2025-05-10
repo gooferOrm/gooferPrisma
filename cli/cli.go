@@ -7,8 +7,8 @@ import (
 	"path"
 
 	"github.com/gooferOrm/goofer/binaries"
+	"github.com/gooferOrm/goofer/binaries/platform"
 	"github.com/gooferOrm/goofer/logger"
-	"github.com/gooferOrm/gooferinaries/platform"
 )
 
 // Run the prisma CLI with given arguments

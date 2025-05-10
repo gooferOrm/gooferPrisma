@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/joho/godotenv"
-	"github.com/tacherasasi/goofer/logger"
+	"github.com/gooferOrm/goofer/logger"
 
 	"github.com/gooferOrm/goofer/binaries"
 	"github.com/gooferOrm/goofer/generator"
-	"github.com/gooferOrm/gooferinaries/platform"
-	"github.com/gooferOrm/gooferinaries/unpack"
+	"github.com/gooferOrm/goofer/binaries/platform"
+	"github.com/gooferOrm/goofer/binaries/unpack"
 )
 
 func (e *QueryEngine) Connect() error {
