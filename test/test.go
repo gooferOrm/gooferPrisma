@@ -10,12 +10,12 @@ import (
 
 	"github.com/gooferOrm/goofer/cli"
 	"github.com/gooferOrm/goofer/engine"
+	"github.com/gooferOrm/goofer/engine/protocol"
 	"github.com/gooferOrm/gooferest/cmd"
 	"github.com/gooferOrm/gooferest/setup/mongodb"
 	"github.com/gooferOrm/gooferest/setup/mysql"
 	"github.com/gooferOrm/gooferest/setup/postgresql"
 	"github.com/gooferOrm/gooferest/setup/sqlite"
-	"github.com/gooferOrm/gooferngine/protocol"
 )
 
 type Database interface {
