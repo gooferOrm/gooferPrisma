@@ -43,8 +43,8 @@ importers:
         specifier: 0.0.20
         version: 0.0.20
       '@types/node':
-        specifier: 24.1.0
-        version: 24.1.0
+        specifier: 24.2.0
+        version: 24.2.0
       '@types/react':
         specifier: 19.1.9
         version: 19.1.9
@@ -934,8 +934,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@24.1.0':
-    resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
+  '@types/node@24.2.0':
+    resolution: {integrity: sha512-3xyG3pMCq3oYCNg7/ZP+E1ooTaGB4cG8JWRsqqOYQdbWNY4zbaV0Ennrd7stjiJEFZCaybcIgpTjJWHRfBSIDw==}
 
   '@types/react@19.1.9':
     resolution: {integrity: sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==}
@@ -1155,6 +1155,10 @@ packages:
 
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
+  chalk@5.5.0:
+    resolution: {integrity: sha512-1tm8DTaJhPBG3bIkVeZt1iZM9GfSX2lzOeDVZH9R9ffRHpmHvxZ/QhgQH/aDTkswQVt+YHdXAdS/In/30OjCbg==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   character-entities-html4@2.1.0:
@@ -3345,8 +3349,8 @@ packages:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
 
-  undici-types@7.8.0:
-    resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
+  undici-types@7.10.0:
+    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
 
   unified@11.0.5:
     resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
@@ -3625,7 +3629,7 @@ snapshots:
   '@commitlint/types@19.8.1':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
-      chalk: 5.4.1
+      chalk: 5.5.0
 
   '@corex/deepmerge@4.0.43': {}
 
@@ -4301,7 +4305,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 24.1.0
+      '@types/node': 24.2.0
 
   '@types/d3-array@3.2.1': {}
 
@@ -4465,9 +4469,9 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.1.0':
+  '@types/node@24.2.0':
     dependencies:
-      undici-types: 7.8.0
+      undici-types: 7.10.0
 
   '@types/react@19.1.9':
     dependencies:
@@ -4739,6 +4743,8 @@ snapshots:
       supports-color: 7.2.0
 
   chalk@5.4.1: {}
+
+  chalk@5.5.0: {}
 
   character-entities-html4@2.1.0: {}
 
@@ -6084,7 +6090,7 @@ snapshots:
 
   lint-staged@15.5.1:
     dependencies:
-      chalk: 5.4.1
+      chalk: 5.5.0
       commander: 13.1.0
       debug: 4.4.1
       execa: 8.0.1
@@ -7685,7 +7691,7 @@ snapshots:
       has-symbols: 1.1.0
       which-boxed-primitive: 1.1.1
 
-  undici-types@7.8.0: {}
+  undici-types@7.10.0: {}
 
   unified@11.0.5:
     dependencies:
