@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@steebchen/lint-next':
         specifier: 1.19.4
-        version: 1.19.4(@steebchen/commitlint-config@1.5.2)(@steebchen/prettier-config@1.4.2(prettier@3.6.2))(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.32.0(jiti@2.4.2)))(eslint@9.32.0(jiti@2.4.2))(husky@9.1.7)(lint-staged@15.5.1)(prettier@3.6.2)(sort-package-json@3.0.0)(tailwindcss@4.1.5)(typescript@5.8.3)
+        version: 1.19.4(@steebchen/commitlint-config@1.5.2)(@steebchen/prettier-config@1.4.2(prettier@3.6.2))(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.32.0(jiti@2.4.2)))(eslint@9.32.0(jiti@2.4.2))(husky@9.1.7)(lint-staged@15.5.1)(prettier@3.6.2)(sort-package-json@3.0.0)(tailwindcss@4.1.12)(typescript@5.8.3)
       '@steebchen/prettier-config':
         specifier: 1.4.2
         version: 1.4.2(prettier@3.6.2)
@@ -38,7 +38,7 @@ importers:
         version: 4.1.11
       '@tailwindcss/typography':
         specifier: 0.5.16
-        version: 0.5.16(tailwindcss@4.1.5)
+        version: 0.5.16(tailwindcss@4.1.12)
       '@types/gtag.js':
         specifier: 0.0.20
         version: 0.0.20
@@ -64,8 +64,8 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       tailwindcss:
-        specifier: 4.1.5
-        version: 4.1.5
+        specifier: 4.1.12
+        version: 4.1.12
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -1798,8 +1798,9 @@ packages:
   fault@2.0.1:
     resolution: {integrity: sha512-WtySTkS4OKev5JtpHXnib4Gxiurzh5NCGvWrFaZ34m6JehfTUhKZvn9njTfw48t6JumVQOmrKqpmGcdwxnhqBQ==}
 
-  fdir@6.4.6:
-    resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -3253,8 +3254,8 @@ packages:
   tailwindcss@4.1.11:
     resolution: {integrity: sha512-2E9TBm6MDD/xKYe+dvJZAmg3yxIEDNRc0jwlNyDg/4Fil2QcSLjFKGVff0lAf1jjeaArlG/M75Ey/EYr/OJtBA==}
 
-  tailwindcss@4.1.5:
-    resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
+  tailwindcss@4.1.12:
+    resolution: {integrity: sha512-DzFtxOi+7NsFf7DBtI3BJsynR+0Yp6etH+nRPTbpWnS2pZBaSksv/JGctNwSWzbFjp0vxSqknaUylseZqMDGrA==}
 
   tapable@2.2.2:
     resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
@@ -4158,7 +4159,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@steebchen/lint-next@1.19.4(@steebchen/commitlint-config@1.5.2)(@steebchen/prettier-config@1.4.2(prettier@3.6.2))(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.32.0(jiti@2.4.2)))(eslint@9.32.0(jiti@2.4.2))(husky@9.1.7)(lint-staged@15.5.1)(prettier@3.6.2)(sort-package-json@3.0.0)(tailwindcss@4.1.5)(typescript@5.8.3)':
+  '@steebchen/lint-next@1.19.4(@steebchen/commitlint-config@1.5.2)(@steebchen/prettier-config@1.4.2(prettier@3.6.2))(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.32.0(jiti@2.4.2)))(eslint@9.32.0(jiti@2.4.2))(husky@9.1.7)(lint-staged@15.5.1)(prettier@3.6.2)(sort-package-json@3.0.0)(tailwindcss@4.1.12)(typescript@5.8.3)':
     dependencies:
       '@abinnovision/eslint-config-base': 2.2.0(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.32.0(jiti@2.4.2)))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3)
       '@abinnovision/eslint-config-react': 2.2.0(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3)
@@ -4169,7 +4170,7 @@ snapshots:
       '@steebchen/prettier-config': 1.4.2(prettier@3.6.2)
       '@types/eslint-plugin-tailwindcss': 3.17.0
       eslint: 9.32.0(jiti@2.4.2)
-      eslint-plugin-tailwindcss: 3.18.0(tailwindcss@4.1.5)
+      eslint-plugin-tailwindcss: 3.18.0(tailwindcss@4.1.12)
     transitivePeerDependencies:
       - '@babel/eslint-parser'
       - '@babel/preset-react'
@@ -4273,13 +4274,13 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.1.11
 
-  '@tailwindcss/typography@0.5.16(tailwindcss@4.1.5)':
+  '@tailwindcss/typography@0.5.16(tailwindcss@4.1.12)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 4.1.5
+      tailwindcss: 4.1.12
 
   '@tanstack/react-virtual@3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
@@ -5350,11 +5351,11 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.5):
+  eslint-plugin-tailwindcss@3.18.0(tailwindcss@4.1.12):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.6
-      tailwindcss: 4.1.5
+      tailwindcss: 4.1.12
 
   eslint-plugin-unused-imports@4.1.4(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.32.0(jiti@2.4.2)):
     dependencies:
@@ -5520,7 +5521,7 @@ snapshots:
     dependencies:
       format: 0.2.2
 
-  fdir@6.4.6(picomatch@4.0.3):
+  fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
 
@@ -7580,7 +7581,7 @@ snapshots:
 
   tailwindcss@4.1.11: {}
 
-  tailwindcss@4.1.5: {}
+  tailwindcss@4.1.12: {}
 
   tapable@2.2.2: {}
 
@@ -7597,7 +7598,7 @@ snapshots:
 
   tinyglobby@0.2.14:
     dependencies:
-      fdir: 6.4.6(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
   title@4.0.1:
