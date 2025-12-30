@@ -32,7 +32,7 @@ jobs:
         if: runner.os == 'macos' && steps.changes.outputs.go == 'true'
         uses: douglascamata/setup-docker-macos-action@v1.1.0
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: |
             ~/go/pkg/mod
@@ -63,7 +63,7 @@ jobs:
               - '**/*.sum'
               - '**/*.work'
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: |
             ~/go/pkg/mod
