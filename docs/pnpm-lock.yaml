@@ -10,19 +10,19 @@ importers:
     dependencies:
       next:
         specifier: 16.0.0
-        version: 16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        version: 16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       nextra:
         specifier: 4.6.0
-        version: 4.6.0(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
+        version: 4.6.0(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.8.3)
       nextra-theme-docs:
         specifier: 4.6.0
-        version: 4.6.0(@types/react@19.1.10)(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(nextra@4.6.0(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.6.0(react@19.1.1))
+        version: 4.6.0(@types/react@19.2.7)(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(nextra@4.6.0(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.8.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3))
       react:
-        specifier: 19.1.1
-        version: 19.1.1
+        specifier: 19.2.3
+        version: 19.2.3
       react-dom:
-        specifier: 19.1.1
-        version: 19.1.1(react@19.1.1)
+        specifier: 19.2.3
+        version: 19.2.3(react@19.2.3)
       seobot:
         specifier: 1.3.0
         version: 1.3.0
@@ -46,14 +46,14 @@ importers:
         specifier: 24.10.1
         version: 24.10.1
       '@types/react':
-        specifier: 19.1.10
-        version: 19.1.10
+        specifier: 19.2.7
+        version: 19.2.7
       eslint:
         specifier: 9.38.0
         version: 9.38.0(jiti@2.6.1)
       next-sitemap:
         specifier: 4.2.3
-        version: 4.2.3(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))
+        version: 4.2.3(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))
       pagefind:
         specifier: 1.3.0
         version: 1.3.0
@@ -124,16 +124,16 @@ packages:
   '@chevrotain/utils@11.0.3':
     resolution: {integrity: sha512-YslZMgtJUyuMbZ+aKvfF3x1f5liK4mWNxghFRv7jqRR9C3R3fAOGTTKvxXDa2Y1s9zSbcpuO0cAxDYsc9SrXoQ==}
 
-  '@commitlint/config-conventional@20.0.0':
-    resolution: {integrity: sha512-q7JroPIkDBtyOkVe9Bca0p7kAUYxZMxkrBArCfuD3yN4KjRAenP9PmYwnn7rsw8Q+hHq1QB2BRmBh0/Z19ZoJw==}
+  '@commitlint/config-conventional@20.2.0':
+    resolution: {integrity: sha512-MsRac+yNIbTB4Q/psstKK4/ciVzACHicSwz+04Sxve+4DW+PiJeTjU0JnS4m/oOnulrXYN+yBPlKaBSGemRfgQ==}
     engines: {node: '>=v18'}
 
   '@commitlint/types@19.8.1':
     resolution: {integrity: sha512-/yCrWGCoA1SVKOks25EGadP9Pnj0oAIHGpl2wH2M2Y46dPM2ueb8wyCVOD7O3WCTkaJ0IkKvzhl1JY7+uCT2Dw==}
     engines: {node: '>=v18'}
 
-  '@commitlint/types@20.0.0':
-    resolution: {integrity: sha512-bVUNBqG6aznYcYjTjnc3+Cat/iBgbgpflxbIBTnsHTX0YVpnmINPEkSRWymT2Q8aSH3Y7aKnEbunilkYe8TybA==}
+  '@commitlint/types@20.2.0':
+    resolution: {integrity: sha512-KTy0OqRDLR5y/zZMnizyx09z/rPlPC/zKhYgH8o/q6PuAjoQAKlRfY4zzv0M64yybQ//6//4H1n14pxaLZfUnA==}
     engines: {node: '>=v18'}
 
   '@corex/deepmerge@4.0.43':
@@ -936,8 +936,8 @@ packages:
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
-  '@types/react@19.1.10':
-    resolution: {integrity: sha512-EhBeSYX0Y6ye8pNebpKrwFJq7BoQ8J5SO6NlvNwwHjSj6adXJViPQrKlsyPw7hLBLvckEMO1yxeGdR82YBBlDg==}
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -1268,8 +1268,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   cytoscape-cose-bilkent@4.1.0:
     resolution: {integrity: sha512-wgQlVIUJF13Quxiv5e1gstZ08rnZj2XaLHGoFMYXz7SkNfCDOOteKBE6SYRfA9WxxI/iBc3ajfDoc6hb/MRAHQ==}
@@ -2621,6 +2621,7 @@ packages:
   next@16.0.0:
     resolution: {integrity: sha512-nYohiNdxGu4OmBzggxy9rczmjIGI+TpR5vbKTsE1HqYwNm1B+YSiugSrFguX6omMOKnDHAmBPY4+8TNJk0Idyg==}
     engines: {node: '>=20.9.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -2855,10 +2856,10 @@ packages:
     peerDependencies:
       react: ^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental
 
-  react-dom@19.1.1:
-    resolution: {integrity: sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==}
+  react-dom@19.2.3:
+    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
-      react: ^19.1.1
+      react: ^19.2.3
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -2869,8 +2870,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react@19.1.1:
-    resolution: {integrity: sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   reading-time@1.5.0:
@@ -3020,8 +3021,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  scheduler@0.26.0:
-    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   scroll-into-view-if-needed@3.1.0:
     resolution: {integrity: sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==}
@@ -3450,6 +3451,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -3490,7 +3496,7 @@ snapshots:
 
   '@abinnovision/commitlint-config@2.2.3':
     dependencies:
-      '@commitlint/config-conventional': 20.0.0
+      '@commitlint/config-conventional': 20.2.0
 
   '@abinnovision/eslint-config-base@2.2.0(@typescript-eslint/eslint-plugin@8.31.1(@typescript-eslint/parser@8.31.1(eslint@9.38.0(jiti@2.6.1))(typescript@5.8.3))(eslint@9.38.0(jiti@2.6.1))(typescript@5.8.3))(@typescript-eslint/parser@8.31.1(eslint@9.38.0(jiti@2.6.1))(typescript@5.8.3))(eslint-plugin-react@7.37.5(eslint@9.38.0(jiti@2.6.1)))(eslint@9.38.0(jiti@2.6.1))(typescript@5.8.3)':
     dependencies:
@@ -3573,9 +3579,9 @@ snapshots:
 
   '@chevrotain/utils@11.0.3': {}
 
-  '@commitlint/config-conventional@20.0.0':
+  '@commitlint/config-conventional@20.2.0':
     dependencies:
-      '@commitlint/types': 20.0.0
+      '@commitlint/types': 20.2.0
       conventional-changelog-conventionalcommits: 7.0.2
 
   '@commitlint/types@19.8.1':
@@ -3583,7 +3589,7 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.2
       chalk: 5.6.2
 
-  '@commitlint/types@20.0.0':
+  '@commitlint/types@20.2.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.2
       chalk: 5.6.2
@@ -3650,18 +3656,18 @@ snapshots:
       '@floating-ui/core': 1.7.3
       '@floating-ui/utils': 0.2.10
 
-  '@floating-ui/react-dom@2.1.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@floating-ui/react-dom@2.1.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@floating-ui/dom': 1.7.4
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  '@floating-ui/react@0.26.28(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@floating-ui/react@0.26.28(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@floating-ui/react-dom': 2.1.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@floating-ui/react-dom': 2.1.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/utils': 0.2.10
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
       tabbable: 6.3.0
 
   '@floating-ui/utils@0.2.10': {}
@@ -3670,15 +3676,15 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@headlessui/react@2.2.9(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@headlessui/react@2.2.9(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@floating-ui/react': 0.26.28(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@react-aria/focus': 3.21.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@react-aria/interactions': 3.25.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@tanstack/react-virtual': 3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-      use-sync-external-store: 1.6.0(react@19.1.1)
+      '@floating-ui/react': 0.26.28(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@react-aria/focus': 3.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@react-aria/interactions': 3.25.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@tanstack/react-virtual': 3.13.12(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+      use-sync-external-store: 1.6.0(react@19.2.3)
 
   '@humanfs/core@0.19.1': {}
 
@@ -3972,54 +3978,54 @@ snapshots:
   '@pagefind/windows-x64@1.3.0':
     optional: true
 
-  '@react-aria/focus@3.21.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@react-aria/focus@3.21.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@react-aria/interactions': 3.25.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@react-aria/utils': 3.31.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      '@react-types/shared': 3.32.1(react@19.1.1)
+      '@react-aria/interactions': 3.25.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@react-aria/utils': 3.31.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@react-types/shared': 3.32.1(react@19.2.3)
       '@swc/helpers': 0.5.17
       clsx: 2.1.1
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  '@react-aria/interactions@3.25.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@react-aria/interactions@3.25.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@react-aria/ssr': 3.9.10(react@19.1.1)
-      '@react-aria/utils': 3.31.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@react-aria/ssr': 3.9.10(react@19.2.3)
+      '@react-aria/utils': 3.31.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@react-stately/flags': 3.1.2
-      '@react-types/shared': 3.32.1(react@19.1.1)
+      '@react-types/shared': 3.32.1(react@19.2.3)
       '@swc/helpers': 0.5.17
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  '@react-aria/ssr@3.9.10(react@19.1.1)':
+  '@react-aria/ssr@3.9.10(react@19.2.3)':
     dependencies:
       '@swc/helpers': 0.5.17
-      react: 19.1.1
+      react: 19.2.3
 
-  '@react-aria/utils@3.31.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@react-aria/utils@3.31.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@react-aria/ssr': 3.9.10(react@19.1.1)
+      '@react-aria/ssr': 3.9.10(react@19.2.3)
       '@react-stately/flags': 3.1.2
-      '@react-stately/utils': 3.10.8(react@19.1.1)
-      '@react-types/shared': 3.32.1(react@19.1.1)
+      '@react-stately/utils': 3.10.8(react@19.2.3)
+      '@react-types/shared': 3.32.1(react@19.2.3)
       '@swc/helpers': 0.5.17
       clsx: 2.1.1
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
   '@react-stately/flags@3.1.2':
     dependencies:
       '@swc/helpers': 0.5.17
 
-  '@react-stately/utils@3.10.8(react@19.1.1)':
+  '@react-stately/utils@3.10.8(react@19.2.3)':
     dependencies:
       '@swc/helpers': 0.5.17
-      react: 19.1.1
+      react: 19.2.3
 
-  '@react-types/shared@3.32.1(react@19.1.1)':
+  '@react-types/shared@3.32.1(react@19.2.3)':
     dependencies:
-      react: 19.1.1
+      react: 19.2.3
 
   '@rtsao/scc@1.1.0': {}
 
@@ -4231,18 +4237,18 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 4.1.17
 
-  '@tanstack/react-virtual@3.13.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@tanstack/react-virtual@3.13.12(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@tanstack/virtual-core': 3.13.12
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
   '@tanstack/virtual-core@3.13.12': {}
 
-  '@theguild/remark-mermaid@0.3.0(react@19.1.1)':
+  '@theguild/remark-mermaid@0.3.0(react@19.2.3)':
     dependencies:
       mermaid: 11.12.1
-      react: 19.1.1
+      react: 19.2.3
       unist-util-visit: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -4428,9 +4434,9 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react@19.1.10':
+  '@types/react@19.2.7':
     dependencies:
-      csstype: 3.1.3
+      csstype: 3.2.3
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -4651,10 +4657,10 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  better-react-mathjax@2.3.0(react@19.1.1):
+  better-react-mathjax@2.3.0(react@19.2.3):
     dependencies:
       mathjax-full: 3.2.2
-      react: 19.1.1
+      react: 19.2.3
 
   brace-expansion@1.1.12:
     dependencies:
@@ -4803,7 +4809,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  csstype@3.1.3: {}
+  csstype@3.2.3: {}
 
   cytoscape-cose-bilkent@4.1.0(cytoscape@3.33.1):
     dependencies:
@@ -6038,7 +6044,7 @@ snapshots:
       micromatch: 4.0.8
       pidtree: 0.6.0
       string-argv: 0.3.2
-      yaml: 2.8.1
+      yaml: 2.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -6642,28 +6648,28 @@ snapshots:
 
   negotiator@1.0.0: {}
 
-  next-sitemap@4.2.3(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)):
+  next-sitemap@4.2.3(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)):
     dependencies:
       '@corex/deepmerge': 4.0.43
       '@next/env': 13.5.3
       fast-glob: 3.3.1
       minimist: 1.2.8
-      next: 16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      next: 16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
 
-  next-themes@0.4.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  next-themes@0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@next/env': 16.0.0
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001751
       postcss: 8.4.31
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
-      styled-jsx: 5.1.6(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+      styled-jsx: 5.1.6(react@19.2.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.0.0
       '@next/swc-darwin-x64': 16.0.0
@@ -6678,34 +6684,34 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextra-theme-docs@4.6.0(@types/react@19.1.10)(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(nextra@4.6.0(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(use-sync-external-store@1.6.0(react@19.1.1)):
+  nextra-theme-docs@4.6.0(@types/react@19.2.7)(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(nextra@4.6.0(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.8.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3)):
     dependencies:
-      '@headlessui/react': 2.2.9(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@headlessui/react': 2.2.9(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       clsx: 2.1.1
-      next: 16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      next-themes: 0.4.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      nextra: 4.6.0(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3)
-      react: 19.1.1
-      react-compiler-runtime: 19.1.0-rc.3(react@19.1.1)
-      react-dom: 19.1.1(react@19.1.1)
+      next: 16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next-themes: 0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      nextra: 4.6.0(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.8.3)
+      react: 19.2.3
+      react-compiler-runtime: 19.1.0-rc.3(react@19.2.3)
+      react-dom: 19.2.3(react@19.2.3)
       scroll-into-view-if-needed: 3.1.0
       zod: 4.0.0-beta.20250424T163858
-      zustand: 5.0.8(@types/react@19.1.10)(react@19.1.1)(use-sync-external-store@1.6.0(react@19.1.1))
+      zustand: 5.0.8(@types/react@19.2.7)(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3))
     transitivePeerDependencies:
       - '@types/react'
       - immer
       - use-sync-external-store
 
-  nextra@4.6.0(next@16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.8.3):
+  nextra@4.6.0(next@16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(typescript@5.8.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.6.2
-      '@headlessui/react': 2.2.9(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      '@headlessui/react': 2.2.9(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@mdx-js/mdx': 3.1.1
       '@napi-rs/simple-git': 0.1.22
       '@shikijs/twoslash': 3.15.0(typescript@5.8.3)
-      '@theguild/remark-mermaid': 0.3.0(react@19.1.1)
+      '@theguild/remark-mermaid': 0.3.0(react@19.2.3)
       '@theguild/remark-npm2yarn': 0.3.3
-      better-react-mathjax: 2.3.0(react@19.1.1)
+      better-react-mathjax: 2.3.0(react@19.2.3)
       clsx: 2.1.1
       estree-util-to-js: 2.0.0
       estree-util-value-to-estree: 3.5.0
@@ -6717,11 +6723,11 @@ snapshots:
       mdast-util-gfm: 3.1.0
       mdast-util-to-hast: 13.2.0
       negotiator: 1.0.0
-      next: 16.0.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
-      react: 19.1.1
-      react-compiler-runtime: 19.1.0-rc.3(react@19.1.1)
-      react-dom: 19.1.1(react@19.1.1)
-      react-medium-image-zoom: 5.4.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      next: 16.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.3
+      react-compiler-runtime: 19.1.0-rc.3(react@19.2.3)
+      react-dom: 19.2.3(react@19.2.3)
+      react-medium-image-zoom: 5.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       rehype-katex: 7.0.1
       rehype-pretty-code: 0.14.1(shiki@3.15.0)
       rehype-raw: 7.0.0
@@ -6956,23 +6962,23 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-compiler-runtime@19.1.0-rc.3(react@19.1.1):
+  react-compiler-runtime@19.1.0-rc.3(react@19.2.3):
     dependencies:
-      react: 19.1.1
+      react: 19.2.3
 
-  react-dom@19.1.1(react@19.1.1):
+  react-dom@19.2.3(react@19.2.3):
     dependencies:
-      react: 19.1.1
-      scheduler: 0.26.0
+      react: 19.2.3
+      scheduler: 0.27.0
 
   react-is@16.13.1: {}
 
-  react-medium-image-zoom@5.4.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-medium-image-zoom@5.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      react: 19.1.1
-      react-dom: 19.1.1(react@19.1.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
-  react@19.1.1: {}
+  react@19.2.3: {}
 
   reading-time@1.5.0: {}
 
@@ -7234,7 +7240,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  scheduler@0.26.0: {}
+  scheduler@0.27.0: {}
 
   scroll-into-view-if-needed@3.1.0:
     dependencies:
@@ -7477,10 +7483,10 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.7
 
-  styled-jsx@5.1.6(react@19.1.1):
+  styled-jsx@5.1.6(react@19.2.3):
     dependencies:
       client-only: 0.0.1
-      react: 19.1.1
+      react: 19.2.3
 
   stylis@4.3.6: {}
 
@@ -7684,9 +7690,9 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  use-sync-external-store@1.6.0(react@19.1.1):
+  use-sync-external-store@1.6.0(react@19.2.3):
     dependencies:
-      react: 19.1.1
+      react: 19.2.3
 
   util-deprecate@1.0.2: {}
 
@@ -7791,6 +7797,8 @@ snapshots:
 
   yaml@2.8.1: {}
 
+  yaml@2.8.2: {}
+
   yargs-parser@21.1.1: {}
 
   yargs@17.7.2:
@@ -7809,10 +7817,10 @@ snapshots:
     dependencies:
       '@zod/core': 0.9.0
 
-  zustand@5.0.8(@types/react@19.1.10)(react@19.1.1)(use-sync-external-store@1.6.0(react@19.1.1)):
+  zustand@5.0.8(@types/react@19.2.7)(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3)):
     optionalDependencies:
-      '@types/react': 19.1.10
-      react: 19.1.1
-      use-sync-external-store: 1.6.0(react@19.1.1)
+      '@types/react': 19.2.7
+      react: 19.2.3
+      use-sync-external-store: 1.6.0(react@19.2.3)
 
   zwitch@2.0.4: {}
